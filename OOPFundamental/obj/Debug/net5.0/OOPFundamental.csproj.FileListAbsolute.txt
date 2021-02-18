@@ -1,0 +1,16 @@
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/OOPFundamental
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/OOPFundamental.deps.json
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/OOPFundamental.runtimeconfig.json
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/OOPFundamental.runtimeconfig.dev.json
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/OOPFundamental.dll
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/ref/OOPFundamental.dll
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/bin/Debug/net5.0/OOPFundamental.pdb
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.csprojAssemblyReference.cache
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.GeneratedMSBuildEditorConfig.editorconfig
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.AssemblyInfoInputs.cache
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.AssemblyInfo.cs
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.csproj.CoreCompileInputs.cache
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.dll
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/ref/OOPFundamental.dll
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.pdb
+/home/lutfiandri/Documents/Kuliah Semester 2/OOP/oop/OOPFundamental/obj/Debug/net5.0/OOPFundamental.genruntimeconfig.cache
