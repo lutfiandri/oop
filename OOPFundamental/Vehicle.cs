@@ -15,16 +15,16 @@ namespace OOPFundamental
     // constructor berfungsi -> inisiasi variabel
     // instansiasi -> membuat instance dari class
 
-    public Vehicle(string brand, string model, double horsePower, bool turboIsOn)
+    public Vehicle(string brand, string model, double horsePower)
     {
       this.brand = brand;
       this.model = model;
       this.horsePower = horsePower;
-      this.turboIsOn = turboIsOn;
+      this.turboIsOn = false;
     }
 
     // function/method/procedure
-    void ShowVehicleInformation()
+    public void ShowVehicleInformation()
     {
       Console.WriteLine($"{brand} - {model} has {horsePower} horse power");
     }
@@ -47,7 +47,19 @@ namespace OOPFundamental
 
     public void GetVelocity()
     {
-      Console.WriteLine($"{this.brand} - {this.model} velocity: {this.CalculateVelocity()}");
+      string turboText = "\b";
+      if (turboIsOn) turboText = "(turbo mode)";
+      Console.WriteLine($"{this.brand} - {this.model} {turboText} velocity: {this.CalculateVelocity()} km/h");
+    }
+
+    public void TurnOffTurbo()
+    {
+      this.turboIsOn = false;
+    }
+
+    public void TurnOnTurbo()
+    {
+      this.turboIsOn = true;
     }
   }
 }

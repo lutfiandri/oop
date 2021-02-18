@@ -7,8 +7,10 @@ namespace OOPFundamental
   {
     static void Main(string[] args)
     {
-      Vehicle tesla = new Vehicle("Tesla", "Mini 4", 500, true);
-      tesla.GetVelocity();
+      Vehicle myCar = new Vehicle("Tesla", "model 3", 500);
+      myCar.GetVelocity();
+      myCar.TurnOnTurbo();
+      myCar.GetVelocity();
     }
   }
 }
