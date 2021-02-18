@@ -38,14 +38,8 @@ namespace OOPFundamental
 
     void SetOptimumVelocity()
     {
-      if (turboIsOn)
-      {
-        this.optimumVelocity = 1.1 * this.optimumVelocity;
-      }
-      else
-      {
-        this.optimumVelocity = (this.horsePower / 4) * 1.5 + 100;
-      }
+      double velocity = (this.horsePower / 4) * 1.5 + 100;
+      this.optimumVelocity = turboIsOn ? 1.1 * velocity : velocity;
     }
 
     public void TurnTurbo(byte option)
