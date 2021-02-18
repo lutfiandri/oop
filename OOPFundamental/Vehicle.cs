@@ -44,15 +44,7 @@ namespace OOPFundamental
 
     public void TurnTurbo(byte option)
     {
-      switch (option)
-      {
-        case 0:
-          this.turboIsOn = false;
-          break;
-        case 1:
-          this.turboIsOn = true;
-          break;
-      }
+      this.turboIsOn = option == 1;
       SetOptimumVelocity();
     }
   }
