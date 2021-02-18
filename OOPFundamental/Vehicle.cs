@@ -9,7 +9,7 @@ namespace OOPFundamental
     string model;
     double horsePower;
     bool turboIsOn;
-    double velocity;
+    double optimumVelocity;
 
     // constructor method -> dipanggil pertama kali saat instansiasi
     // constructor berfungsi -> inisiasi variabel
@@ -21,6 +21,7 @@ namespace OOPFundamental
       this.model = model;
       this.horsePower = horsePower;
       this.turboIsOn = false;
+      this.SetOptimumVelocity();
     }
 
     // function/method/procedure
@@ -28,38 +29,37 @@ namespace OOPFundamental
     {
       Console.WriteLine($"{brand} - {model} has {horsePower} horse power");
     }
-    void CalculateOptimumVelocity()
+
+    public void ShowOptimumVelocity()
     {
-      this.velocity = (this.horsePower / 4) * 1.5 + 100;
-    }
-    double CalculateTurboVelocity()
-    {
-      double turboVelocity = 1.1 * this.velocity;
-      return turboVelocity;
+      string turboText = turboIsOn ? "(turbo mode)" : "\b";
+      Console.WriteLine($"{this.brand} - {this.model} {turboText} optimum velocity: {this.optimumVelocity} km/h");
     }
 
-    double CalculateVelocity()
+    void SetOptimumVelocity()
     {
-      this.CalculateOptimumVelocity();
-      if (!turboIsOn) return velocity;
-      return CalculateTurboVelocity();
+      if (turboIsOn)
+      {
+        this.optimumVelocity = 1.1 * this.optimumVelocity;
+      }
+      else
+      {
+        this.optimumVelocity = (this.horsePower / 4) * 1.5 + 100;
+      }
     }
 
-    public void GetVelocity()
+    public void TurnTurbo(byte option)
     {
-      string turboText = "\b";
-      if (turboIsOn) turboText = "(turbo mode)";
-      Console.WriteLine($"{this.brand} - {this.model} {turboText} velocity: {this.CalculateVelocity()} km/h");
-    }
-
-    public void TurnOffTurbo()
-    {
-      this.turboIsOn = false;
-    }
-
-    public void TurnOnTurbo()
-    {
-      this.turboIsOn = true;
+      switch (option)
+      {
+        case 0:
+          this.turboIsOn = false;
+          break;
+        case 1:
+          this.turboIsOn = true;
+          break;
+      }
+      SetOptimumVelocity();
     }
   }
 }
