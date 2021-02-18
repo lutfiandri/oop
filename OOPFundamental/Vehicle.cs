@@ -32,9 +32,9 @@ namespace OOPFundamental
     {
       this.velocity = (this.horsePower / 4) * 1.5 + 100;
     }
-    double CalculateTurboVelocity(double velocity)
+    double CalculateTurboVelocity()
     {
-      double turboVelocity = 1.1 * velocity;
+      double turboVelocity = 1.1 * this.velocity;
       return turboVelocity;
     }
 
@@ -42,7 +42,7 @@ namespace OOPFundamental
     {
       this.CalculateOptimumVelocity();
       if (!turboIsOn) return velocity;
-      return CalculateTurboVelocity(velocity);
+      return CalculateTurboVelocity();
     }
 
     public void GetVelocity()
