@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-// purcashed kurang srek
+// purcashed kurang srek, tapi dah bisa jalan
 
 namespace OnlineTryout
 {
@@ -8,27 +8,29 @@ namespace OnlineTryout
   {
     private List<purchasedTryoutInfo> purchasedTryoutInfos = new List<purchasedTryoutInfo>();
 
-    public Participant(string userId, string roleId, string name) : base(userId, roleId, name)
-    { }
+    public Participant(string userId, string name) : base(userId, name)
+    {
+      Console.WriteLine($"Participant created. ID: {userId}");
+    }
 
-    public void BuyTryout()
+    public void BuyTryout(string tID)
     {
       this.SearchTryout();
-      Console.WriteLine("--- Buying Tryout ---");
       purchasedTryoutInfo tryout = new purchasedTryoutInfo
       {
-        tryoutId = "tryout_001",
+        tryoutId = tID,
         haveDone = false,
         score = 0
       };
       this.purchasedTryoutInfos.Add(tryout);
+      Console.WriteLine($"Tryout purchased. Tryout ID: {tID}");
     }
 
     public void ReadEditorial()
     {
       this.SearchTryout();
       // hanya bisa membuka tryout dari tryout
-      Console.WriteLine("--- Read Editorial ---");
+      Console.WriteLine("Read the Editorial");
     }
 
     public void DoTryout()
@@ -36,8 +38,7 @@ namespace OnlineTryout
       this.SearchTryout();
       // hanya bisa membuka tryout dari purchasedTryoutIDs
       // dan jika belum pernah dikerjakan
-      Console.WriteLine("--- Do the Tryout ---");
-      // Console.
+      Console.WriteLine("Do the Tryout");
     }
 
   }

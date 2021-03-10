@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 // aman
 
@@ -11,11 +12,13 @@ namespace OnlineTryout
     public static void insertTryoutToDatabase(Tryout tryout)
     {
       tryouts.Add(tryout);
+      Console.WriteLine($"Tryout inserted to db");
     }
 
     public static void insertEditorialToDatabase(Editorial editorial)
     {
       editorials.Add(editorial);
+      Console.WriteLine($"Editorial inserted to db");
     }
   }
 }
